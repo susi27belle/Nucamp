@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="utf-8">
+    <title>dating website</title>
+    <meta http-equiv="X-UA-compatibel" content="IE-edge">
+    <meta name="viewport" content="widht-device-widht,initial-scale-1.0">
+    <link rel="stylesheet" href="css/survey.css" />
+</head>
+<body>
+    body 
+    <hi>Enter Your Detail For Our Dating Website</hi>
+    <form class="dating-form" action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+    <fieldset>
+        <legend>Your face</legend>
+        <div>
+            <label for="Upload Your Image">Upload Your Image : </label>
+            <button>choose file</button> No file choosen
+            <p>Image Preview : </p>
+        </div>
+    </fieldset>
+    <section>
+        <fieldset>
+        <legend>Your Information</legend>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your First Name" />
+            </div>
+            <div>
+                <label for="lastname">Last Name</label> 
+                <input type="text" id="lastname" name="lastname" placeholder="Your Last Name" />
+            </div>
+            <div>
+                <label for="email">Email</label> 
+                <input type="email" id="email" name="email" placeholder="Your Email Address" />
+            </div>
+            <div>
+                <label for="gender">gender</label>
+                <input type="radio" id="women" name="gender" value="woman" />
+                <label for="women">Women</label>
+                <input type="radio" id="man" name="gender" value="man" />
+                <label for="man">Man</label>
+            </div>
+            <div>
+                <label for="age">age</label>
+                <input type="number" id="age" name="age" />
+            </div>
+            <div>
+                <label for="dob">date of birth</label>
+                <input type="date" id="dob" name="dob" />
+            </div>
+            <div>
+                <label for="color">Favorite color</label>
+                <input type="color" id="color" name="color" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Country</legend>
+            <div>
+                Choose Country:
+                <input type="radio" id="brasil" name="counrty" value="brazil" /> 
+                <label for="brazil">brazil</label>
+                <input type="radio" id="france" name="country" value="france" /> 
+                <label for="france">france</label> 
+                <input type="radio" id="japan" name="country" value="japan" /> 
+                <label for="japan">japan</label>
+                <input type="radio" id="lbya" name="country" value="libya" />
+                <label for="libya">libya</label>
+                <input type="radio" id="indonesia" name="country" value="indonesia" />
+                <label for="indonesia">indonesia</label>
+            </div>
+            <fieldset>
+                <legend>Salary</legend>
+                <div>
+                <label for="Salary">Salary</label>
+                poor <input type="range" id="salary" name="salary" min="0" max="100" value="50" /> Rich
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Your Contact Informations</legend>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+            </div>
+            <div>
+                <label for="phone">phone</label> 
+                <input type="tel" id="phone" name="phone" />
+            </div>
+            <div>
+                <label for="address"><address></address></label> 
+                <cols="40" id="address" name="address" />
+            <div>
+                <label for="Contact method(s)">contact method(s)</label>
+                <input type="checkbox" name="contact" id="emailCheckbox" value="email" /> 
+                <label for="emailCheckbox">email</label>
+                <input type="checkbox" name="contact" id="phoneCheckbox" value="phone" />
+                <label for="phoneCheckbox">phone</label>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit-btn"  />
+    </form>
+</body>
+</html>
+    </section>
+</body>
